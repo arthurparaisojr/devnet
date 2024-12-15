@@ -1,7 +1,7 @@
 ﻿namespace Produto.models
 {
 
-    public class Produto
+    public class ProdutoBO
     {
         public int Id { get; set; }
         public string Nome { get; set; }

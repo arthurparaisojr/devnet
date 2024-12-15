@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Produto.repositories;
 
 namespace Produto.Controllers
 {

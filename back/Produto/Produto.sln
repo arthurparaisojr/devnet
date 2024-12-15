@@ -1,14 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35521.163 d17.12
+VisualStudioVersion = 17.12.35521.163
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Produto", "Produto.csproj", "{B779D388-8CD0-4820-A4E5-5DCFF20CE8B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Produtos", "Produtos.csproj", "{B779D388-8CD0-4820-A4E5-5DCFF20CE8B2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{37788095-2886-4332-8E98-864E2A870050}"
 	ProjectSection(SolutionItems) = preProject
 		docker-compose.yml = docker-compose.yml
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProdutos", "..\TestProdutos\TestProdutos.csproj", "{06C95977-8F3E-4D00-8A86-1FB22E6EF0B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +22,10 @@ Global
 		{B779D388-8CD0-4820-A4E5-5DCFF20CE8B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B779D388-8CD0-4820-A4E5-5DCFF20CE8B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B779D388-8CD0-4820-A4E5-5DCFF20CE8B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06C95977-8F3E-4D00-8A86-1FB22E6EF0B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06C95977-8F3E-4D00-8A86-1FB22E6EF0B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06C95977-8F3E-4D00-8A86-1FB22E6EF0B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06C95977-8F3E-4D00-8A86-1FB22E6EF0B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
