@@ -1,0 +1,6 @@
+CREATE TABLE Produtos (
+    Id INT IDENTITY PRIMARY KEY,
+    Nome NVARCHAR(100) NOT NULL,
+    Preco DECIMAL(10, 2) NOT NULL,
+    Quantidade INT NOT NULL
+);
