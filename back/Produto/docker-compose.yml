@@ -19,7 +19,7 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: 010203
-      MYSQL_DATABASE: db
+      MYSQL_DATABASE: ProdutosDB
     ports:
       - "3306:3306"
     volumes:
