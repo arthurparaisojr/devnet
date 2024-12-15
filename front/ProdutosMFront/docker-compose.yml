@@ -19,9 +19,9 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: 010203
-      MYSQL_DATABASE: db
+      MYSQL_DATABASE: produtosdb
     ports:
-      - "3306:3306"
+      - "3306:3306" # Porta do banco de dados
     volumes:
       - mysql_data:/var/lib/mysql
 
@@ -30,10 +30,9 @@ services:
       context: ./src/ProdutosMFront
       dockerfile: Dockerfile
     ports:
-      - "3000:80"
+      - "3000:80" # Porta para acessar o front-end
     depends_on:
       - api
 
-      
 volumes:
   mysql_data:

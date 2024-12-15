@@ -3,6 +3,10 @@
 
 Este desafio técnico tem como objetivo avaliar as competências básicas de um desenvolvedor .NET, focando em práticas de desenvolvimento moderno e escalável com um tempo limitado de 4 horas. As áreas de conhecimento abordadas são simplificadas para garantir que o desafio possa ser completado dentro do prazo estipulado.
 
+*docker-compose up
+*Front-end Angular: http://localhost:3000
+*API: http://localhost:5000
+
 
 
 ## Desenvolvimento Backend em .NET Core
