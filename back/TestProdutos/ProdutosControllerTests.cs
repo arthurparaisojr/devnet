@@ -1,4 +1,5 @@
-﻿using Produto.repositories;
+﻿using Produto.Controllers;
+using Produto.repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,7 +24,7 @@ namespace TestProdutos
         public async Task ListarProdutos_RetornaOk()
         {
             _mockRepo.Setup(repo => repo.GetAllAsync())
-                     .ReturnsAsync(new List<Produto>());
+                     .ReturnsAsync(new List<ProdutoDB>());
 
             var result = await _controller.ListarProdutos();
 

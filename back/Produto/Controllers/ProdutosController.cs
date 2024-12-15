@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Produto.repositories;
 
+using Produto.models;
+using Produtos.validation;
 namespace Produto.Controllers
 {
     [ApiController]
@@ -15,7 +17,7 @@ namespace Produto.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CriarProduto([FromBody] Produto produto)
+        public async Task<IActionResult> CriarProduto([FromBody] ProdutoBO produto)
         {
             var validator = new ProdutoValidator();
             var result = validator.Validate(produto);

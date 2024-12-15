@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Produto.models;
+using System.Collections.Generic;
 
 namespace Produto.data
 {
@@ -6,6 +7,6 @@ namespace Produto.data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        public DbSet<Produto> Produtos { get; set; }
+        public DbSet<ProdutoBO> Produtos { get; set; }
     }
 }

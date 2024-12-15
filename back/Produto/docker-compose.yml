@@ -3,25 +3,36 @@ version: '3.9'
 services:
   api:
     build:
-      context: ./src/Produto
+      context: ./src/Produtos
       dockerfile: Dockerfile
     ports:
       - "5000:80" 
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ConnectionStrings__DefaultConnection=Server=db;Database=ProdutosDB;User Id=sa;Password=YourStrong@Password;
+      - ConnectionStrings__DefaultConnection=Server=db;Database=produtosdb;User=root;Password=yourpassword;
     depends_on:
       - db
 
   db:
-    image: mcr.microsoft.com/mssql/server:2022-latest
+    image: mysql:8.0
+    container_name: mysql-container
+    restart: always
     environment:
-      SA_PASSWORD: "010203"
-      ACCEPT_EULA: "Y"
+      MYSQL_ROOT_PASSWORD: 010203
+      MYSQL_DATABASE: db
     ports:
-      - "1433:1433"
+      - "3306:3306"
     volumes:
-      - mssql_data:/var/opt/mssql
+      - mysql_data:/var/lib/mysql
+
+  frontend:
+    build:
+      context: ./src/front
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - api
 
 volumes:
-  mssql_data:
+  mysql_data:
